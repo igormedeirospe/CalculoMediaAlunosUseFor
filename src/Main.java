@@ -1,15 +1,23 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+import javax.swing.*;
+import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
-
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
+        /*
+        Criar um algoritimo usando for que leia duas notas de 3 alunos, e para cada
+        aluno, calcule a media e eciba na tela a situação aprovado ou reprovado (media 6)
+        */
+        //1= para cada aluno sera atribuida uma media que foi resultada atraves de 2 notas x3;
+        for (int i = 0; i < 3; i++){
+        String aluno = JOptionPane.showInputDialog("Digite o nome: ");
+            float n1,n2;
+            n1 = Integer.parseInt(JOptionPane.showInputDialog("Digite sua nota: "));
+            n2 = Integer.parseInt(JOptionPane.showInputDialog("Digite sua nota: "));
+            float media = (n1 +n2) /2;
+        if(media >= 6){
+            System.out.println("Nome aluno= " + aluno + "\nMedia = " + media + "\nsua situação " +  " Aprovado\n");
+        }else {
+            System.out.println("Nome aluno= " + aluno + "\nMedia = " + media + "\nsua situação " +  " Reprovado\n");
+        }
         }
     }
 }
