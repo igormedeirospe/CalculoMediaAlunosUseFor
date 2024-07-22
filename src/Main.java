@@ -5,7 +5,7 @@ public class Main {
         /*
         Criar um algoritimo usando for que leia duas notas de 3 alunos, e para cada
         aluno, calcule a media e eciba na tela a situação aprovado ou reprovado (media 6)
-        */
+        *///
         //1= para cada aluno sera atribuida uma media que foi resultada atraves de 2 notas x3;
         for (int i = 0; i < 3; i++){
         String aluno = JOptionPane.showInputDialog("Digite o nome: ");
